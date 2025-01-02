@@ -34,32 +34,34 @@ App
 
 #### - folder
 
-- container(`UI`) / presenter(`Logic`) 디자인 패턴을 따름
-- 비즈니스 로직은 Hook으로 처리
-
 ```
 src/
-├── components/         # UI 컴포넌트
-│   ├── ui/             # shadcn UI 기본 컴포넌트
-│   ├── features/       # 기능별 컴포넌트
-│   └── common/         # 공통 컴포넌트
-│        └── Header / QueryStateHandler(Loader, Error)
+├── components/         # UI 컴포넌트(컨테이너)
+│   ├── ui/             # shadcn UI 기본
+│   ├── common/         # 공통
+│   │    └── Header / QueryStateHandler(Loader, Error)
+│   └── features/       # 기능별
+│
+├── routes/             # 라우팅 설정
+│
+├── pages/              # 페이지 컴포넌트
 │
 ├── stores/             # 전역 상태 관리
 │   └─── useAuthStore
 │
 ├── hooks/              # 커스텀 훅(비즈니스 로직)
 │
-├── lib/                # 유틸리티 및 설정
-│   └── utils/          # 유틸리티 함수
-│   └── const/          # 상수
+├── types/              # 타입 정의
 │
-├── routes/             # 라우팅 설정
-│
-├── pages/              # 페이지 컴포넌트
-│
-└── types/              # 타입 정의
+└── lib/                # 유틸리티 및 설정
+    └── utils/          # 유틸 함수
+    └── const/          # 상수
 ```
+
+- container(`UI`) / presenter(`Logic`) 디자인 패턴을 따름
+- 비즈니스 로직은 zustand의 액션 함수와 hooks으로 처리
+  - `store/useAuthStore`: 인증을 위한 **1회성 데이터** 사용 + 인증 상태 전역 관리
+  - `hooks(tanstack-query)`: UI 업데이트를 위한 다회성 데이터 사용 + 서버 데이터 **캐싱**
 
 ## server
 
