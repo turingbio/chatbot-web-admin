@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router';
 
-import { RootLayout, ProtectedLayout } from '@/layouts';
+import { RootLayout, ProtectedLayout } from '@/components';
 import { Dashboard, Analytics } from '@/pages';
 
 const Router = () => {

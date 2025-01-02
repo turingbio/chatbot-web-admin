@@ -5,9 +5,9 @@ export const axiosInstance = axios.create({
   baseURL: BASE_URL
 });
 
-export const handleAxiosError = ({error, message}:{
+export const handleAxiosError = ({ error, message = '' }:{
   error: unknown;
-  message: string | undefined
+  message: string;
 }) => {
   if (axios.isAxiosError(error)) {
     return error.response?.data?.message ?? error.message;

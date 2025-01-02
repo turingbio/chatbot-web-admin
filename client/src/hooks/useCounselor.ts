@@ -1,7 +1,7 @@
 import { useQuery,useMutation, useQueryClient, UseQueryResult } from '@tanstack/react-query';
 import { useAuthStore } from '@/stores/useAuthStore';
 import { axiosInstance } from '@/lib/axios';
-import { queryKey } from '@/lib/const/queryKey'; 
+import { queryKey } from '@/lib/const/queryKeys'; 
 import { ENDPOINTS } from '@/lib/const';
 import { Counselor, CounselorSettings } from '@/types';
 

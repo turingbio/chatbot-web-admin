@@ -27,7 +27,7 @@ import {
 import { ArrowUpDown, StickyNote } from 'lucide-react'
 import { Inbound } from '@/types'
 
-// TODO:코드 분리+주석
+// TODO: 코드 분리+주석
 const data: Inbound[] = [
   {
     'id': 'req-001',
@@ -215,7 +215,7 @@ export const columns: ColumnDef<Inbound>[] = [
     header: '상태',
     cell: ({ row }) => {
       const status = row.getValue('status') as string
-      return <div>{status}</div>
+      return <div className='px-3 py-2 text-sm bg-slate-300 rounded-[30px] w-fit'>{status}</div>
     },
   },
   {

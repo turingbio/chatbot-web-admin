@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://localhost:3001' as const;
+export const BASE_URL = 'http://localhost:3001';
 
 export const ENDPOINTS = {
   AUTH: '/auth',
