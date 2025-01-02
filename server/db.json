@@ -1,0 +1,254 @@
+{
+  "auth": {
+    "email": "happy.campus@gmail.com",
+    "password": "1234",
+    "token": "mock-jwt-token",
+    "counselorId": "counselorA"
+  },
+  "counselors": {
+    "counselorA": {
+      "name": "김튜링",
+      "gender": "female",
+      "center": "가정행복센터",
+      "region": "대전",
+      "email": "happy.campus@gmail.com",
+      "call": "042-223-7778",
+      "profileImage": "https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "specialties": [
+        "불안",
+        "PTSD"
+      ],
+      "career": [
+        {
+          "label": "000 센터",
+          "date": "2024.01 - 2024.06"
+        }
+      ],
+      "education": [
+        {
+          "label": "000 심리학 석사",
+          "date": "2024.01 - 2024.06"
+        }
+      ],
+      "certificate": [
+        {
+          "label": "000 자격",
+          "date": "2024.03"
+        }
+      ],
+      "settings": {
+        "matchingEnabled": true,
+        "notificationsEnabled": false,
+        "availableHours": {
+          "월": {
+            "active": true,
+            "start": "08:00",
+            "end": "18:00"
+          },
+          "화": {
+            "active": true,
+            "start": "08:00",
+            "end": "18:00"
+          },
+          "수": {
+            "active": true,
+            "start": "07:00",
+            "end": "18:00"
+          },
+          "목": {
+            "active": true,
+            "start": "07:00",
+            "end": "18:00"
+          },
+          "금": {
+            "active": false,
+            "start": "09:00",
+            "end": "18:00"
+          },
+          "토": {
+            "active": false,
+            "start": "09:00",
+            "end": "18:00"
+          },
+          "일": {
+            "active": false,
+            "start": "09:00",
+            "end": "18:00"
+          }
+        }
+      }
+    }
+  },
+  "alarms": {
+    "counselorA": [
+      {
+        "id": "a-001",
+        "createdAt": "2024-03-26T10:30:00",
+        "type": "NEW",
+        "title": "새로운 상담 요청",
+        "detail": "사용자 '마음속그늘'님이 상담을 요청했습니다.(우울증)",
+        "status": "UNREAD",
+        "userId": "user-458"
+      },
+      {
+        "id": "a-002",
+        "createdAt": "2024-03-26T10:35:00",
+        "type": "ACCEPTED",
+        "title": "상담 요청 수락",
+        "detail": "사용자 '나만없어고양이'님의 상담 요청을 수락했습니다.",
+        "status": "READ",
+        "userId": "user-458"
+      },
+      {
+        "id": "a-003",
+        "createdAt": "2024-03-26T11:45:00",
+        "type": "NEW",
+        "title": "새로운 상담 요청",
+        "detail": "사용자 '힘든하루'님이 상담을 요청했습니다.(불안)",
+        "status": "UNREAD",
+        "userId": "user-521"
+      },
+      {
+        "id": "a-004",
+        "createdAt": "2024-03-26T11:50:00",
+        "type": "REJECTED",
+        "title": "상담 요청 거절",
+        "detail": "사용자 '힘든하루'님의 상담 요청을 거절했습니다.(불안)",
+        "status": "READ",
+        "userId": "user-521"
+      },
+      {
+        "id": "a-005",
+        "createdAt": "2024-03-26T14:30:00",
+        "type": "SYSTEM_NOTICE",
+        "title": "시스템 점검 안내",
+        "detail": "오늘 23:00-24:00 시스템 점검이 예정되어 있습니다.",
+        "status": "UNREAD"
+      }
+    ]
+  },
+  "inbounds": {
+    "counselorA": [
+      {
+        "id": "req-001",
+        "name": "마음속그늘",
+        "clientId": "client-458",
+        "status": "신규",
+        "requestDate": "2024-03-26",
+        "problemCategory": "우울"
+      },
+      {
+        "id": "req-002",
+        "name": "나만없어고양이",
+        "clientId": "client-521",
+        "status": "매칭중",
+        "requestDate": "2024-03-26",
+        "problemCategory": "불안"
+      },
+      {
+        "id": "req-003",
+        "name": "힘든하루",
+        "clientId": "client-632",
+        "status": "상담진행중",
+        "requestDate": "2024-03-25",
+        "problemCategory": "가족"
+      },
+      {
+        "id": "req-004",
+        "name": "꿈나무123",
+        "clientId": "client-445",
+        "status": "완료",
+        "requestDate": "2024-03-24",
+        "problemCategory": "학업"
+      },
+      {
+        "id": "req-005",
+        "name": "외로운밤하늘",
+        "clientId": "client-789",
+        "status": "신규",
+        "requestDate": "2024-03-26",
+        "problemCategory": "대인관계"
+      },
+      {
+        "id": "req-006",
+        "name": "지친발걸음",
+        "clientId": "client-234",
+        "status": "신규",
+        "requestDate": "2024-03-26",
+        "problemCategory": "우울"
+      },
+      {
+        "id": "req-007",
+        "name": "불안한하루",
+        "clientId": "client-567",
+        "status": "매칭중",
+        "requestDate": "2024-03-26",
+        "problemCategory": "불안"
+      },
+      {
+        "id": "req-008",
+        "name": "가족사랑12",
+        "clientId": "client-890",
+        "status": "상담진행중",
+        "requestDate": "2024-03-25",
+        "problemCategory": "가족"
+      },
+      {
+        "id": "req-009",
+        "name": "열공하자",
+        "clientId": "client-123",
+        "status": "완료",
+        "requestDate": "2024-03-24",
+        "problemCategory": "학업"
+      },
+      {
+        "id": "req-010",
+        "name": "혼자인밤",
+        "clientId": "client-456",
+        "status": "신규",
+        "requestDate": "2024-03-26",
+        "problemCategory": "대인관계"
+      },
+      {
+        "id": "req-011",
+        "name": "우울한비",
+        "clientId": "client-789",
+        "status": "신규",
+        "requestDate": "2024-03-26",
+        "problemCategory": "우울"
+      },
+      {
+        "id": "req-012",
+        "name": "걱정많아요",
+        "clientId": "client-012",
+        "status": "매칭중",
+        "requestDate": "2024-03-26",
+        "problemCategory": "불안"
+      },
+      {
+        "id": "req-013",
+        "name": "화목한날",
+        "clientId": "client-345",
+        "status": "상담진행중",
+        "requestDate": "2024-03-25",
+        "problemCategory": "가족"
+      },
+      {
+        "id": "req-014",
+        "name": "공부힘들어",
+        "clientId": "client-678",
+        "status": "완료",
+        "requestDate": "2024-03-24",
+        "problemCategory": "학업"
+      },
+      {
+        "id": "req-015",
+        "name": "친구없는밤",
+        "clientId": "client-901",
+        "status": "신규",
+        "requestDate": "2024-03-26",
+        "problemCategory": "대인관계"
+      }
+    ]
+  }
+}
